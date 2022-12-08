@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 :root {
-    --color: rgb(235, 235, 235);
+    --color: rgb(245, 245, 245);
 }
 
 html{scroll-behavior:smooth}
@@ -13,6 +15,31 @@ body {
 
 h1,h2,label {
     color: var(--color);
+}
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+#hero #about-me p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .fa-external-link {
@@ -32,16 +59,15 @@ h1,h2,label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(160, 160, 160);
+    border-bottom: 4px solid rgb(160, 160, 160);
 }
 
 #navbar h1 {
     color: white;
     display: inline-block;
     position: relative;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 3rem;
-    padding-bottom: 0.25rem;
 }
 
 #navbar h1:hover {
@@ -55,7 +81,7 @@ h1,h2,label {
     bottom: 0;
     width: 0;
     height: 4px;
-    background-color: white;
+    background-color: #ffffff;
     transition: width 0.25s ease-out;
 }
 
@@ -94,10 +120,24 @@ li a {
 
 .hero-aboutMe-title {
     font-size: 3rem;
+    padding-bottom: 3rem;
+    word-spacing: 0.3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hero #about-me .name {
+    color: #7944ff;
+    font-weight: bolder;
+    font-size: 4.5rem;
 }
 
 .hero-aboutMe-data {
     font-size: 1.7rem;
+    word-spacing: 0.1rem;
+}
+
+.web-dev {
+    color: #7944ff;
 }
 
 #section-navigations:hover > .section-navigation {
@@ -197,8 +237,8 @@ section > nav > h1:hover::before {
 }
 
 .project-header {
-    border-top: 5px solid rgb(160, 160, 160);
-    border-bottom: 5px solid rgb(160, 160, 160);
+    border-top: 4px solid rgb(160, 160, 160);
+    border-bottom: 4px solid rgb(160, 160, 160);
     display: flex;
     justify-content: left;
 }
@@ -219,7 +259,7 @@ section > nav > h1:hover::before {
 .project-description li {
     color: var(--color);
     font-size: 1.5rem;
-    line-height: 5rem;
+    line-height: 4rem;
 }
 
 main {
@@ -628,6 +668,19 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
         font-size: 1.5rem;
     }
 
+    .hero-aboutMe-title {
+        font-size: 2.5rem;
+        padding-bottom: 3rem;
+        word-spacing: 0.3rem;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #hero #about-me .name {
+        color: #8758FF;
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
+
     .section-navigation {
         text-align: center;
     }
@@ -889,7 +942,14 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 @media screen and (max-width: 700px) {
 
     .hero-aboutMe-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+        padding-bottom: 3rem;
+    }
+
+    #hero #about-me .name {
+        color: #8758FF;
+        font-weight: bold;
+        font-size: 3.5rem;
     }
     
     .hero-aboutMe-data {
@@ -897,7 +957,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     .section-navigation {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .project-header h1 {
@@ -905,12 +965,13 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     .project-description ul {
-        margin-left: 1rem;    
+        margin-left: 0.3rem;    
     }
 
     .project-description li {
         margin-left: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        line-height: 2.5rem;
     }
 
     /* This is the tech stack */
@@ -947,7 +1008,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
         
         main > article > .article-title-section > .techstack > .tech > .tech-content > ul > li {
             color: var(--color);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 2rem;
         }
     
@@ -1027,6 +1088,10 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     /* End of technologies section */
 
     /* This is contact section */
+
+    #Contact > .contact-header > h1 {
+        font-size: 2rem;
+    }
 
     .contact-inner {
         border: 2px solid rgb(62, 62, 62);
