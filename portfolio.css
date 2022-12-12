@@ -59,7 +59,7 @@ h1,h2,label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid rgb(160, 160, 160);
+    border-bottom: 3px solid rgb(160, 160, 160);
 }
 
 #navbar h1 {
@@ -96,7 +96,7 @@ h1,h2,label {
     list-style-type: none;       
 }
 
-li a {
+.links li a {
     color: white;
     padding-right: 3rem;
 }
@@ -236,9 +236,15 @@ section > nav > h1:hover::before {
     overflow: hidden;
 }
 
+#Projects > main {
+    margin: 2rem;
+    border: 1px solid rgb(85, 84, 84);
+    border-radius: 0.8rem;
+}
+
 .project-header {
-    border-top: 4px solid rgb(160, 160, 160);
-    border-bottom: 4px solid rgb(160, 160, 160);
+    border-top: 3px solid rgb(160, 160, 160);
+    border-bottom: 3px solid rgb(160, 160, 160);
     display: flex;
     justify-content: left;
 }
@@ -253,13 +259,18 @@ section > nav > h1:hover::before {
 }
 
 .project-description ul {
-    margin-left: 3rem;
+    margin: 1rem;
 }
 
 .project-description li {
     color: var(--color);
     font-size: 1.5rem;
-    line-height: 4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+.project-description li a {
+    color: white;
 }
 
 main {
@@ -441,6 +452,12 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     overflow: hidden;
 }
 
+#Tech > main {
+    margin: 2rem;
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 0.8rem;
+}
+
 .tech-section-content {
     display: flex;
     flex-direction: column;
@@ -481,8 +498,8 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 }
 
 .tech-header {
-    border-top: 5px solid rgb(160, 160, 160);
-    border-bottom: 5px solid rgb(160, 160, 160);
+    border-top: 3px solid rgb(160, 160, 160);
+    border-bottom: 3px solid rgb(160, 160, 160);
     display: flex;
     justify-content: left;
 }
@@ -507,8 +524,8 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 }
 
 .contact-header {
-    border-top: 5px solid rgb(160, 160, 160);
-    border-bottom: 5px solid rgb(160, 160, 160);
+    border-top: 3px solid rgb(160, 160, 160);
+    border-bottom: 3px solid rgb(160, 160, 160);
     display: flex;
     justify-content: left;
 }
@@ -669,7 +686,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     .hero-aboutMe-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         padding-bottom: 3rem;
         word-spacing: 0.3rem;
         font-family: 'Raleway', sans-serif;
@@ -678,7 +695,11 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     #hero #about-me .name {
         color: #8758FF;
         font-weight: bold;
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .hero-aboutMe-data {
+        font-size: 1.6rem;
     }
 
     .section-navigation {
@@ -704,18 +725,19 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
         display: flex;
         flex-direction: column;
     }
-    
-    .project-description ul {
-        margin-left: 3rem;
-        margin-left: 1rem;
-    }
+
     
     .project-description li {
-        margin-left: 2rem;
-        font-size: 1.1rem;
         color: var(--color);
         font-size: 1.2rem;
-        line-height: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #Projects > main {
+        margin: 2rem;
+        border: 1px solid rgb(85, 84, 84);
+        border-radius: 0.8rem;
     }
 
     
@@ -841,6 +863,12 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
     /* this is technologies section */
 
+    #Tech > main {
+        margin: 2rem;
+        border: 1px solid rgb(85, 84, 84);
+        border-radius: 0.8rem;
+    }
+
     #Tech > main > .tech-inner {
         display: flex;
         flex-direction: column;
@@ -941,37 +969,66 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
 @media screen and (max-width: 700px) {
 
+    #navbar h1 {
+        font-size: 1.5rem;
+    }
+
+    .fa-brands {
+        font-size: 1.5rem;
+    }
+
+    .fa-external-link {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .links li a {
+        color: white;
+        padding-right: 2rem;
+    }
+
     .hero-aboutMe-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         padding-bottom: 3rem;
     }
 
     #hero #about-me .name {
         color: #8758FF;
         font-weight: bold;
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
     
     .hero-aboutMe-data {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 0.5rem;
     }
 
     .section-navigation {
-        font-size: 2.3rem;
-    }
-
-    .project-header h1 {
         font-size: 2rem;
     }
 
-    .project-description ul {
-        margin-left: 0.3rem;    
+    .project-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-header h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        font-size: 1.8rem;
     }
 
     .project-description li {
-        margin-left: 1rem;
         font-size: 0.95rem;
-        line-height: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        
+    }
+
+    #Projects > main {
+        margin: 1.5rem;
+        border: 1px solid rgb(85, 84, 84);
+        border-radius: 0.8rem;
     }
 
     /* This is the tech stack */
@@ -1003,7 +1060,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
         
         main > article > .article-title-section > .techstack > .tech > .tech-content {
             flex-grow: 1;
-            width: 80%;
+            width: 90%;
         }
         
         main > article > .article-title-section > .techstack > .tech > .tech-content > ul > li {
@@ -1032,7 +1089,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
             
         main > article > .article-title-section > .techstack > .other > .other-content {
             flex-grow: 1;
-            width: 80%;
+            width: 90%;
                 
         }
             
@@ -1046,8 +1103,22 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
     /* this is technologies section */
 
+    .tech-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Tech > main {
+        margin: 1.5rem;
+        border: 1px solid rgb(85, 84, 84);
+        border-radius: 0.8rem;
+    }
+
     #Tech > .tech-header > h1 {
-        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        font-size: 1.8rem;
     }
 
     #Tech > main > .tech-inner {
@@ -1079,7 +1150,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     #Tech > main > .tech-inner > .tech-inner-items > svg {
-        padding-left: 3rem;
+        padding-left: 2rem;
         stroke: white;
         height: 25px;
         width: 25px;
@@ -1088,6 +1159,18 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     /* End of technologies section */
 
     /* This is contact section */
+
+    .contact-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-header > h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        font-size: 1.8rem;
+    }
 
     #Contact > .contact-header > h1 {
         font-size: 2rem;
@@ -1112,7 +1195,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     .contact-inner-content > label {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     /* End of contact section */
