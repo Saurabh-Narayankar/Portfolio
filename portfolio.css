@@ -126,7 +126,7 @@ h1,h2,label {
 }
 
 #hero #about-me .name {
-    color: #7944ff;
+    color: #9b7dff;
     font-weight: bolder;
     font-size: 4.5rem;
 }
@@ -137,7 +137,7 @@ h1,h2,label {
 }
 
 .web-dev {
-    color: #7944ff;
+    color: #9b7dff;
 }
 
 #section-navigations:hover > .section-navigation {
@@ -264,9 +264,9 @@ section > nav > h1:hover::before {
 
 .project-description li {
     color: var(--color);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 
 .project-description li a {
@@ -347,7 +347,7 @@ main > article > .article-title-section > .techstack > .tech > nav {
 
 main > article > .article-title-section > .techstack > .tech > nav > p {
     font-weight: bold;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
 main > article > .article-title-section > .techstack > .tech > .tech-content {
@@ -357,7 +357,7 @@ main > article > .article-title-section > .techstack > .tech > .tech-content {
 
 main > article > .article-title-section > .techstack > .tech > .tech-content > ul > li {
     color: var(--color);
-    font-size:1.25rem;
+    font-size:1.15rem;
     line-height: 2rem;
 }
 
@@ -375,7 +375,7 @@ main > article > .article-title-section > .techstack > .other > nav {
 
 main > article > .article-title-section > .techstack > .other > nav > p {
     font-weight: bold;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
 main > article > .article-title-section > .techstack > .other > .other-content {
@@ -386,7 +386,7 @@ main > article > .article-title-section > .techstack > .other > .other-content {
 
 main > article > .article-title-section > .techstack > .other > .other-content > ul > li {
     color: var(--color);
-    font-size:1.25rem;
+    font-size:1.15rem;
     line-height: 2rem;
 }
 
@@ -401,15 +401,15 @@ main > article > .article-title-section, main > article > .article-nav-section {
 }
 
 main > article:first-child > .article-image-section {
-    background-image: url("./images/nextcharts.png");
+    background-image: url("./images/Nextfitness.png");
 }
 
 main > article:nth-child(2) > .article-image-section {
-    background-image: url("./images/Ecommerce.png");
+    background-image: url("./images/nextcharts.png");
 }
 
 main > article:nth-child(3) > .article-image-section {
-    background-image: url("https://images.unsplash.com/photo-1660580554695-d2ca5008f1f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80");
+    background-image: url("./images/Ecommerce.png");
 }
 
 main > article > .article-image-section {
@@ -693,7 +693,6 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     #hero #about-me .name {
-        color: #8758FF;
         font-weight: bold;
         font-size: 3rem;
     }
@@ -971,6 +970,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
     #navbar h1 {
         font-size: 1.5rem;
+        margin-left: 1.5rem;
     }
 
     .fa-brands {
@@ -983,7 +983,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
     .links li a {
         color: white;
-        padding-right: 2rem;
+        padding-right: 1.5rem;
     }
 
     .hero-aboutMe-title {
@@ -992,9 +992,13 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 
     #hero #about-me .name {
-        color: #8758FF;
         font-weight: bold;
         font-size: 2.8rem;
+        color: #ae95ff;
+    }
+
+    .web-dev {
+        color: #ae95ff;
     }
     
     .hero-aboutMe-data {
@@ -1021,7 +1025,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     .project-description li {
         font-size: 0.95rem;
         margin-bottom: 1rem;
-        line-height: 1.5rem;
+        line-height: 1.1rem;
         
     }
 
@@ -1066,7 +1070,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
         main > article > .article-title-section > .techstack > .tech > .tech-content > ul > li {
             color: var(--color);
             font-size: 0.95rem;
-            line-height: 2rem;
+            line-height: 1.5rem;
         }
     
     
@@ -1096,7 +1100,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
         main > article > .article-title-section > .techstack > .other > .other-content > ul > li {
             color: var(--color);
             font-size:0.9rem;
-            line-height: 2rem;
+            line-height: 1.5rem;
         }
     
     /* End of tech stack */
@@ -1152,8 +1156,8 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     #Tech > main > .tech-inner > .tech-inner-items > svg {
         padding-left: 2rem;
         stroke: white;
-        height: 25px;
-        width: 25px;
+        height: 35px;
+        width: 35px;
     }
 
     /* End of technologies section */
